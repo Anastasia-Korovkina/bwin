@@ -1,0 +1,177 @@
+.popup {
+  display: none;
+  width: 278px;
+  height: 400px;
+  margin: 0 calc(50% - 139px);
+  font-weight: 700;
+  background-color: $popup-color;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  box-sizing: border-box;
+  transform: translateY(-534px);
+  transition: all ease-in-out 0.6s;
+  cursor: pointer;
+  z-index: 5;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 calc(50% - 300px);
+    width: 600px;
+    height: 560px;
+    transform: translateY(-789px);
+    padding-top: 8px;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &__wrapper {
+    padding: 31px 44px 0 15px;
+    position: relative;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 62px 0 45px;
+    }
+  }
+
+  &__button {
+    content: "";
+    position: fixed;
+    right: 12px;
+    top: 13px;
+
+    outline: none;
+    border: 0px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+
+    @media (min-width: $desktop-width) {
+      right: 28px;
+      top: 37px;
+    }
+  }
+
+  &__image {
+    @media (min-width: $desktop-width) {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  &__title {
+    font-family: "Druk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 7px;
+    text-align: center;
+    color: $text-color;
+
+    @media (min-width: $desktop-width) {
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 12px;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color;
+    margin-bottom: 24px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 23px;
+      line-height: 30px;
+      margin-bottom: 53px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+    padding-left: 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__item {
+    color: $special-color;
+    margin-bottom: 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__span {
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color;
+
+    @media (min-width: $desktop-width) {
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
+}
+
+.simplebar-scrollbar {
+  left: -2px;
+}
+
+.simplebar-scrollbar::before {
+  width: 5px;
+  height: 60px;
+  background: $text-color;
+  border-radius: 100px;
+  margin-top: 25px;
+  margin-right: 5px;
+
+  @media (min-width: $desktop-width) {
+    width: 9px;
+    height: 163px;
+    margin-top: 0;
+    margin-right: 5px;
+  }
+}
+
+.simplebar-vertical {
+  margin-right: 0px;
+  margin-top: 48px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 15px;
+    margin-top: 98px;
+  }
+}
+
+.simplebar-track {
+  right: 15px;
+
+  // @media (min-width: $desktop-width) {
+  //   right: 15px;
+  // }
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 5px;
+  height: 334px;
+
+  @media (min-width: $desktop-width) {
+    width: 9px;
+    height: 420px;
+    background-color: #2e2e2e;
+    border-radius: 100px;
+  }
+}

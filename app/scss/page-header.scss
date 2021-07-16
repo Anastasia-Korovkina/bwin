@@ -1,0 +1,36 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #000000;
+  background: url(../images/player-mobile.png) 51% 78% no-repeat, url(../images/background-mobile.jpg) 90% 0% no-repeat;
+  background-size: auto, 100%;
+  min-height: 550px;
+
+  @media (min-width: $desktop-width) {
+    background: url(../images/player-desktop.png) 93% 48% no-repeat, url(../images/background-desktop.jpg) 90% 0% no-repeat;
+    background-size: auto, 100%;
+  }
+}
+
+picture {
+  display: block;
+}
+
+.page-header {
+  max-width: 1440px;
+  padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+    padding-top: 66px;
+  }
+
+  &__wrapper {
+    padding: 0 21px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 121px;
+    }
+  }
+}

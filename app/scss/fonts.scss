@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Druk Wide";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/DrukWide-Bold.woff2") format("woff2"),
+    url("../fonts/DrukWide-Bold.woff") format("woff");
+}
+// Похожий шрифт на шрифт из макета, поддерживающий кириллицу
+@font-face {
+  font-family: "Druk";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/DrukCyr-Bold.woff2") format("woff2"),
+    url("../fonts/DrukCyr-Bold.woff") format("woff");
+}
